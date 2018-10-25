@@ -1,2 +1,2 @@
-docker build -t antidotelabs/saltstack .
-docker push antidotelabs/saltstack
+docker build -t sudhishna/saltstack .
+docker push sudhishna/saltstack

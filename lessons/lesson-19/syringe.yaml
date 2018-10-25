@@ -3,7 +3,7 @@ lessonName: Working with SaltStack
 lessonID: 19
 category: introductory
 topologyType: custom
-lessondiagram: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/lessondiagram.png
+lessondiagram: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/Saltstack.png
 
 utilities:
 
