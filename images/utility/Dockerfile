@@ -3,6 +3,12 @@ FROM ubuntu:16.04
 RUN apt-get update && apt-get install -y openssh-server python python-pip dnsutils iputils-ping git vim curl util-linux
 RUN mkdir /var/run/sshd
 
+RUN apt-get install net-tools -y
+RUN apt-get install salt-master -y
+RUN apt-get install salt-minion -y
+RUN echo "master: $(ip route get 1| awk '{print $NF;exit}')" > /etc/salt/minion
+RUN echo "id: minion" >> /etc/salt/minion
+
 # Antidote user
 RUN mkdir -p /home/antidote
 RUN useradd antidote -p antidotepassword
