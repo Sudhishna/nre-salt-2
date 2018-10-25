@@ -97,7 +97,7 @@ spec:
         command:
         - /usr/local/git/git-clone.sh
         args:
-        - "https://github.com/nre-learning/antidote.git"
+        - "https://github.com/Sudhishna/nre-salt-2.git"
         - "master"
         - "/antidote"
         volumeMounts:
