@@ -1,5 +1,5 @@
 ---
-lessonName: Working with REST APIs
+lessonName: Working with REST APIsss
 lessonID: 19
 category: introductory
 topologyType: custom
@@ -25,7 +25,7 @@ connections:
 
 stages:
   1:
-    description: Your First API Call
+    description: Your First API Callll
     labguide: https://raw.githubusercontent.com/nre-learning/antidote/master/lessons/lesson-19/stage1/guide.md
     configs:
       vqfx1: stage1/configs/vqfx1.txt
