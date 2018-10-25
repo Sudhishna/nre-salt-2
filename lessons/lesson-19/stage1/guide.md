@@ -27,19 +27,11 @@ This is effectively the same as what your browser would do if you were to naviga
 What if, instead, we were to query a resource somewhere that wasn't even intended to be rendered visually in a browser? Remember, machines don't care what things "look" like, they just need the information in as efficient a manner as possible. If we add a few parameters, and change the URL, we can query a resource from one of our vQFX switches that fits this description:
 
 ```
-salt-master -d
+curl \
+    -u "root:VR-netlab9" \
+    http://vqfx1:8080/rpc/get-interface-information \
+    --header "Accept: application/json"
 ```
 <button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('linux1', 1)">Run this snippet</button>
-
-```
-salt-minion -d
-```
-<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('linux1', 1)">Run this snippet</button>
-
-```
-salt-key -L
-```
-<button type="button" class="btn btn-primary btn-sm" onclick="runSnippetInTab('linux1', 1)">Run this snippet</button>
-
 
 This output is a bit different than the first output. This isn't HTML at all - it's a very efficient format called JSON, or "Javascript Object Notation". It's the de-facto standard for the vast majority of REST APIs.

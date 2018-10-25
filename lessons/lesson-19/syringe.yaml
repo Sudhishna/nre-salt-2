@@ -1,18 +1,18 @@
 ---
-lessonName: Basic Architecture
+lessonName: Working with REST APIsss
 lessonID: 19
 category: introductory
 topologyType: custom
 lessondiagram: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/lessondiagram.png
 
 utilities:
-- name: saltstack1
+- name: linux1
   image: antidotelabs/utility
   sshuser: antidote
   sshpassword: antidotepassword
 
 devices:
-- name: saltstack1
+- name: vqfx1
   image: antidotelabs/vqfxspeedy:snap1
   sshuser: root
   sshpassword: VR-netlab9
@@ -20,12 +20,12 @@ devices:
 
 connections:
 - a: vqfx1
-  b: saltstack1
+  b: linux1
   subnet: 10.1.0.0/24
 
 stages:
   1:
-    description: Setting up Saltstack Master and Minion
+    description: Your First API Callll
     labguide: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/stage1/guide.md
     configs:
       vqfx1: stage1/configs/vqfx1.txt
