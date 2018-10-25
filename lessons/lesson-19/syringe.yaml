@@ -3,7 +3,7 @@ lessonName: Working with REST APIsss
 lessonID: 19
 category: introductory
 topologyType: custom
-lessondiagram: https://raw.githubusercontent.com/nre-learning/antidote/master/lessons/lesson-19/lessondiagram.png
+lessondiagram: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/lessondiagram.png
 
 utilities:
 - name: linux1
@@ -26,7 +26,7 @@ connections:
 stages:
   1:
     description: Your First API Callll
-    labguide: https://raw.githubusercontent.com/nre-learning/antidote/master/lessons/lesson-19/stage1/guide.md
+    labguide: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/stage1/guide.md
     configs:
       vqfx1: stage1/configs/vqfx1.txt
 
