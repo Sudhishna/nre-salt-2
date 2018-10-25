@@ -1,5 +1,5 @@
 ---
-lessonName: Working with REST APIsss
+lessonName: Working with SaltStack22
 lessonID: 19
 category: introductory
 topologyType: custom
@@ -25,7 +25,7 @@ connections:
 
 stages:
   1:
-    description: Your First API Callll
+    description: Spin Master and Minion
     labguide: https://raw.githubusercontent.com/Sudhishna/nre-salt-2/master/lessons/lesson-19/stage1/guide.md
     configs:
       vqfx1: stage1/configs/vqfx1.txt
